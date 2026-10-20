@@ -1,0 +1,9 @@
+{
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "torch": "2.6.0+cu124",
+  "torchvision": "0.21.0+cu124",
+  "numpy": "1.26.4",
+  "Pillow": "12.2.0",
+  "matplotlib": "3.10.9",
+  "tqdm": "4.70.1"
+}

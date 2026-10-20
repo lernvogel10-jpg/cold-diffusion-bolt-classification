@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-20",
+  "python_files_syntax_checked": 27,
+  "classification_table3_rows_verified": 12,
+  "classification_table2_rows_verified": 2,
+  "roc_runs_recomputed_from_frozen_scores": 12,
+  "auc_values_verified": 48,
+  "auc_absolute_tolerance": 1e-12,
+  "dataset_count_check": 6199,
+  "fast_unit_tests": {
+    "suite": "python -m unittest discover -s tests -v",
+    "count": 8,
+    "result": "passed"
+  },
+  "full_training_rerun": false,
+  "all6199_generator_inference_rerun": false,
+  "training_data_and_checkpoints_uploaded": false,
+  "source_integrity": "Verbatim source hashes checked by unit tests."
+}

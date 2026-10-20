@@ -1,0 +1,8 @@
+# Observed research environment. Install the matching CUDA build of torch first if needed.
+# Exact installed versions are recorded in docs/ENVIRONMENT.json after local verification.
+torch>=2.3,<3
+torchvision>=0.18,<1
+numpy>=1.24,<3
+Pillow>=10,<13
+matplotlib>=3.7,<4
+tqdm>=4.66,<5

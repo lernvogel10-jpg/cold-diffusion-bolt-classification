@@ -1,0 +1,3 @@
+classifier,input,run_dir
+ResNet18,Original,runs/resnet18/original
+ResNet18,Remapped,runs/resnet18/remapped

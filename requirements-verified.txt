@@ -1,0 +1,9 @@
+# Observed local environment, Python 3.11.15.
+# The original torch/torchvision builds used +cu124; select the appropriate
+# official PyTorch package index for your CUDA environment.
+torch==2.6.0
+torchvision==0.21.0
+numpy==1.26.4
+Pillow==12.2.0
+matplotlib==3.10.9
+tqdm==4.70.1

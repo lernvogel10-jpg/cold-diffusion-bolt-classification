@@ -1,0 +1,183 @@
+{
+  "date": "2026-10-20",
+  "original_files": [
+    {
+      "repository_path": "diffusion_stripe/__init__.py",
+      "source_relative_to_workspace": "diffusion_stripe\\__init__.py",
+      "sha256": "b59bbb79b7edca2ce8cdb0bc07bfe7e1ed4fdcaaa161db88e4d48e3afc5123aa",
+      "bytes": 126,
+      "verbatim": true
+    },
+    {
+      "repository_path": "diffusion_stripe/data.py",
+      "source_relative_to_workspace": "diffusion_stripe\\data.py",
+      "sha256": "bba40be5d188ff42b6f114cf53d3c68d05a82fac4df6ee75202a0b045f55ddc2",
+      "bytes": 5187,
+      "verbatim": true
+    },
+    {
+      "repository_path": "diffusion_stripe/model.py",
+      "source_relative_to_workspace": "diffusion_stripe\\model.py",
+      "sha256": "95036e40f67ec7f59a2544b1259387ef8b8bcbb76a0a193f8a4bfec8a3192aa0",
+      "bytes": 5561,
+      "verbatim": true
+    },
+    {
+      "repository_path": "diffusion_stripe/training.py",
+      "source_relative_to_workspace": "diffusion_stripe\\training.py",
+      "sha256": "1b9d782471dc1219c2166437321ca8c4f2fc729d5b6fb93fae121b6da5500041",
+      "bytes": 6271,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/compute_roc_auc_original.py",
+      "source_relative_to_workspace": "output\\tables\\table3_EditaPlot_preview_20261017_v1\\roc_auc_20261017_v1\\compute_roc_auc.py",
+      "sha256": "9ceb52c6201f18ab300fe3edba0c7e9d0464e7e7162536f4a6495c9fb0675632",
+      "bytes": 16731,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/evaluate_stage1_vs_stage2_t50_similarity.py",
+      "source_relative_to_workspace": "evaluate_stage1_vs_stage2_t50_similarity.py",
+      "sha256": "5e39263953071a598b54d192596339df9f0ef4c38b2400be55a2998a05a1ac01",
+      "bytes": 19163,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/evaluate_t1_all6199.py",
+      "source_relative_to_workspace": "evaluate_t1_all6199.py",
+      "sha256": "6cb42886cc6e5f7694570b8613422aa7f94c1ac10b1d5e8d3270f92399f3c8b0",
+      "bytes": 14456,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/resnet18_full6199_loss_earlystop.py",
+      "source_relative_to_workspace": "resnet18_full6199_loss_earlystop.py",
+      "sha256": "eb226453e715d8f128502dfa381c9b25a718404f9c412f8e2a6154dc875c17e3",
+      "bytes": 23810,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_clean_baseline_vs_stage2train4951.py",
+      "source_relative_to_workspace": "run_clean_baseline_vs_stage2train4951.py",
+      "sha256": "21ecda315a2f73e435cbe955fb8b88cd8224800539273991557d5df8028c19a0",
+      "bytes": 18072,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_four_more_backbones_stage2_t50.py",
+      "source_relative_to_workspace": "run_four_more_backbones_stage2_t50.py",
+      "sha256": "fff1d78c57b4732175febb0f97b041683273a0b4811a9dedb50f415e8b3393fd",
+      "bytes": 25865,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_multibackbone_stage2_t50_comparison.py",
+      "source_relative_to_workspace": "run_multibackbone_stage2_t50_comparison.py",
+      "sha256": "ac0fc92697fc8b85a5eb5e2eb7a53d45a61d38e146836c1ba9a79a59b977c737",
+      "bytes": 27208,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_resnet18_clean_vs_post_formula.py",
+      "source_relative_to_workspace": "run_resnet18_clean_vs_post_formula.py",
+      "sha256": "3a1d57724e541b73a4f52e492dee789b7b0892bbf811336b4f638c176e650cd5",
+      "bytes": 17177,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_resnet18_full6199_external373.py",
+      "source_relative_to_workspace": "run_resnet18_full6199_external373.py",
+      "sha256": "2e1d6bdfaf1c888e3fb155beb8c9f98125a05640ddeb639e46ff1935c1abd60b",
+      "bytes": 34033,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_stage1_vs_stage2_t50_resnet18_ablation.py",
+      "source_relative_to_workspace": "run_stage1_vs_stage2_t50_resnet18_ablation.py",
+      "sha256": "cc1eb4d6fe85c253be2ae83a95bfc4ca5165bad51d8feca5d63e35fae3cad0ad",
+      "bytes": 16347,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_stage2_train4951_remapped_resnet18.py",
+      "source_relative_to_workspace": "run_stage2_train4951_remapped_resnet18.py",
+      "sha256": "62707110b530fef78793b7472ca62439060ced4e4002e6595857578c23b40742",
+      "bytes": 32966,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_stage2_train4951_t50_remapped_resnet18.py",
+      "source_relative_to_workspace": "run_stage2_train4951_t50_remapped_resnet18.py",
+      "sha256": "3b8d568a11b5d206ced42bad5db8abc05ae5ba78d4b854ed715f707a6e4040cc",
+      "bytes": 20684,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/run_ttbm373_stage2_resnet18.py",
+      "source_relative_to_workspace": "run_ttbm373_stage2_resnet18.py",
+      "sha256": "af21ba3aa293eb5266832eb929113e52c7df9b14761b93d8cb1ee1931e153859",
+      "bytes": 30080,
+      "verbatim": true
+    },
+    {
+      "repository_path": "historical/train_stage2_train4951.py",
+      "source_relative_to_workspace": "train_stage2_train4951.py",
+      "sha256": "d86e31934bd724699ddc942fc8fd01f8bf82f3706668d14d4a0042749e02f25f",
+      "bytes": 14231,
+      "verbatim": true
+    },
+    {
+      "repository_path": "reference/generate_striped_dataset.py",
+      "source_relative_to_workspace": "YOLO26_study/label_texture_experiment/generate_striped_dataset.py",
+      "sha256": "6f22a8e9ce6c174ea9ec89f41e5b99addfd3deffbcfe77ab862c7b4f11e3257b",
+      "bytes": 16216,
+      "verbatim": true
+    },
+    {
+      "repository_path": "reference/regroup_crops64_dataset.py",
+      "source_relative_to_workspace": "YOLO26_study/label_texture_experiment/regroup_crops64_dataset.py",
+      "sha256": "be05b41d84a9bde58132bb8eddd43f5970828cfb9786b94020e0404969165853",
+      "bytes": 18359,
+      "verbatim": true
+    },
+    {
+      "repository_path": "reference/striped_classification_experiment.py",
+      "source_relative_to_workspace": "YOLO26_study/label_texture_experiment/striped_classification_experiment.py",
+      "sha256": "0af6c673dd8e5c25e49698a8ca32bb466f6e75db4671fe90cb8cf142ad19495d",
+      "bytes": 34588,
+      "verbatim": true
+    },
+    {
+      "repository_path": "results/ablation_full_metrics.csv",
+      "source_relative_to_workspace": "experiments\\resnet18_stage1_vs_stage2_t50_val_loss_seed43_20261016_v1\\classification_ablation_metrics.csv",
+      "sha256": "c190df168e4173e0e93ef39cf0824b285d62dac176f4167fd939597164d2ce9b",
+      "bytes": 1652,
+      "verbatim": true
+    },
+    {
+      "repository_path": "results/auc_summary.csv",
+      "source_relative_to_workspace": "output\\tables\\table3_EditaPlot_preview_20261017_v1\\roc_auc_20261017_v1\\auc_summary.csv",
+      "sha256": "3599583ed87718a35a19b5ab1770876e49032e1ea6650bb63ef6ac8503fb4056",
+      "bytes": 1322,
+      "verbatim": true
+    },
+    {
+      "repository_path": "train_stage1_ddpm.py",
+      "source_relative_to_workspace": "train_stage1_ddpm.py",
+      "sha256": "7942b3392dfe782ce13cdcea340fe194b1a3ff88b27e6c98c75698fae826f1ec",
+      "bytes": 7725,
+      "verbatim": true
+    },
+    {
+      "repository_path": "train_stage2_finetune.py",
+      "source_relative_to_workspace": "train_stage2_finetune.py",
+      "sha256": "5e440742c9fd270068d00b63f34fbbe01faa1b6bb7eb74afa8ecd48e033729d7",
+      "bytes": 9359,
+      "verbatim": true
+    }
+  ],
+  "manuscript_sha256": "fb2e6f0f7eb7193f614734dc237f59dcf26ff4481a708540350ab048b3a1e4a7",
+  "experiment_summary_sha256": "0e146bfe6c4530e4046c16932b0d868ecb604063d0877c776f73bf6dcbd346ae",
+  "original_sources_modified": false
+}

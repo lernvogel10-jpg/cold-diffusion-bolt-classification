@@ -1,0 +1,113 @@
+{
+  "class_order": [
+    "defect",
+    "normal",
+    "nut"
+  ],
+  "split_counts": {
+    "train": {
+      "defect": 990,
+      "normal": 2417,
+      "nut": 1544
+    },
+    "val": {
+      "defect": 125,
+      "normal": 295,
+      "nut": 199
+    },
+    "test": {
+      "defect": 129,
+      "normal": 306,
+      "nut": 194
+    }
+  },
+  "stage1": {
+    "expected_count": 6199,
+    "image_size": 64,
+    "timesteps": 100,
+    "beta_start": 0.0001,
+    "beta_end": 0.02,
+    "epochs": 200,
+    "min_epochs": 20,
+    "patience": 15,
+    "min_delta": 1e-05,
+    "batch_size": 64,
+    "workers": 4,
+    "learning_rate": 0.0002,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "base_channels": 32,
+    "time_embedding_dimension": 128,
+    "seed": 43,
+    "no_amp": false
+  },
+  "stage2": {
+    "expected_count": 4951,
+    "splits": [
+      "train"
+    ],
+    "image_size": 64,
+    "epochs": 20,
+    "min_epochs": 20,
+    "batch_size": 64,
+    "workers": 4,
+    "learning_rate": 2e-05,
+    "weight_decay": 0.0001,
+    "grad_clip": 1.0,
+    "seed": 43,
+    "fixed_timestep": 0,
+    "no_early_stop": true,
+    "no_amp": false
+  },
+  "classifier": {
+    "pretrained": false,
+    "seed": 43,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0001,
+    "label_smoothing": 0.05,
+    "class_weights_enabled": true,
+    "augmentation_enabled": true,
+    "amp": true,
+    "batch_size": 64,
+    "workers": 4,
+    "max_epochs": 100,
+    "patience": 15,
+    "min_delta": 0.0001,
+    "selection": "val_loss",
+    "train_samples": 4951,
+    "val_samples": 619,
+    "test_samples": 629
+  },
+  "inference": {
+    "initial_timestep": 50,
+    "recursive_steps": 50,
+    "terminal_remapping_timestep": 0,
+    "generator_calls_per_image": 51,
+    "precision": "float32, no AMP",
+    "fixed_noise_seed": 43,
+    "shared_noise_across_images_and_steps": true,
+    "clip_within_recursion": false,
+    "clip_before_terminal_remapping": true,
+    "clip_final_output": true
+  },
+  "watermark": {
+    "channel": "B",
+    "stripe_width": 1,
+    "mask_low": 0.9,
+    "mask_high": 1.0,
+    "patterns": {
+      "defect": "horizontal",
+      "normal": "vertical",
+      "nut": "diagonal_top_left_to_bottom_right"
+    }
+  },
+  "selected_architectures": [
+    "resnet18",
+    "densenet121",
+    "mobilenet_v3_large",
+    "efficientnet_b0",
+    "shufflenet_v2_x1_0",
+    "regnet_y_400mf"
+  ],
+  "limitation": "Stage 1 uses all 6199 class-encoded watermark targets, including validation/test counterparts. Not a fully unseen-test evaluation of the entire pipeline. Single seed 43."
+}

@@ -1,0 +1,93 @@
+{
+  "scope": "Frozen results corresponding to the supplied manuscript; no model retraining during packaging.",
+  "comparisons": [
+    {
+      "classifier": "ResNet18",
+      "input": "Original",
+      "run_directory": "experiments/resnet18_original_vs_stage2train4951_t1_val_loss_seed43/runs/resnet18_scratch_original_val_loss",
+      "test_metrics_sha256": "50a0b46ade9f77f2852707a5f57759b2e199eefe3dfba4b9363dd115376109d9",
+      "test_predictions_sha256": "029e5590b530c25473254c1beb8e32bb3b7dcb1f3a30f3f22f4e02815c718994"
+    },
+    {
+      "classifier": "ResNet18",
+      "input": "Remapped",
+      "run_directory": "experiments/stage2_train4951_t50_remapped_resnet18_seed43/runs/resnet18_scratch_val_loss",
+      "test_metrics_sha256": "10d073cfa9d61a4f4fb5a8961059eb71b0363f18d92a41ba693b16ab68748c85",
+      "test_predictions_sha256": "c4783a0b766a1f287645fc431e84ebabe5cc4ffbb12e789836440cead3f7b107"
+    },
+    {
+      "classifier": "DenseNet121",
+      "input": "Original",
+      "run_directory": "experiments/multibackbone_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/densenet121/original",
+      "test_metrics_sha256": "f891f0714340e79da46613994d03835dc6c3131d83738789bd4d491f76e6cfc5",
+      "test_predictions_sha256": "b095b907a4a5eb71ad391506eccc57a01f3b2953f7870cccefb0bf62cb09bbb3"
+    },
+    {
+      "classifier": "DenseNet121",
+      "input": "Remapped",
+      "run_directory": "experiments/multibackbone_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/densenet121/t50_remapped",
+      "test_metrics_sha256": "42a2f00de5251192b5580833b1316483c15bcadd1f26eae4f57e59a643b13351",
+      "test_predictions_sha256": "fbdd386bdefaa7b714e02b66eeebc43294386622aa2b5892752d5d510d51b274"
+    },
+    {
+      "classifier": "MobileNetV3-Large",
+      "input": "Original",
+      "run_directory": "experiments/multibackbone_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/mobilenet_v3_large/original",
+      "test_metrics_sha256": "a21fc3c2779a59fb789da51578fc933750138bd0a981f8ccc1bad562cb9c1c6b",
+      "test_predictions_sha256": "d50e3c5c22931208d84d2f2d2604103fc52d1338b20fb3d20771dd0702543225"
+    },
+    {
+      "classifier": "MobileNetV3-Large",
+      "input": "Remapped",
+      "run_directory": "experiments/multibackbone_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/mobilenet_v3_large/t50_remapped",
+      "test_metrics_sha256": "a6606a14014424a61549ff007ea0f6d6908eeafd717c1fba5dfd9e84b38ce8ba",
+      "test_predictions_sha256": "b52daf81a041d337e32fe32bd1723d0af65db42a49f1c2b8bf4a7bc5776b1d10"
+    },
+    {
+      "classifier": "EfficientNet-B0",
+      "input": "Original",
+      "run_directory": "experiments/multibackbone_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/efficientnet_b0/original",
+      "test_metrics_sha256": "4933f2146e67536cf7544589a98eb269adeffdf343473acdbb69e6a289369a50",
+      "test_predictions_sha256": "8b83774879a271051815ff86f07f489164fdb4e235b230e8a1e4170bfe7e7809"
+    },
+    {
+      "classifier": "EfficientNet-B0",
+      "input": "Remapped",
+      "run_directory": "experiments/multibackbone_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/efficientnet_b0/t50_remapped",
+      "test_metrics_sha256": "8e4c4b16ac417c14d3e16c04cf1c0433ba8c421392e49e2e7abfb48b87c2490f",
+      "test_predictions_sha256": "8e1578d40afa58e4a22adbfe79b589ca23a1724d3fdc83a0b74eb30a2338e349"
+    },
+    {
+      "classifier": "ShuffleNetV2 x1.0",
+      "input": "Original",
+      "run_directory": "experiments/multibackbone_plus4_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/shufflenet_v2_x1_0/original",
+      "test_metrics_sha256": "dc444984eefefe98293e1edd086d3bb91e8a81d361e40fa9b0a349659be86b22",
+      "test_predictions_sha256": "0e7514cf1990dd09c18425ba3d8ba3d975315189a1d33f641076453944e4d37b"
+    },
+    {
+      "classifier": "ShuffleNetV2 x1.0",
+      "input": "Remapped",
+      "run_directory": "experiments/multibackbone_plus4_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/shufflenet_v2_x1_0/t50_remapped",
+      "test_metrics_sha256": "8cc457dbbd829f29c985a2f3aa81b9ba10e9c0e557fbfd8665f59b66e37040db",
+      "test_predictions_sha256": "1c559f9df9b07afd884043cd9349a91dcc47a9b294113d4e251ed10c1541e8fb"
+    },
+    {
+      "classifier": "RegNetY-400MF",
+      "input": "Original",
+      "run_directory": "experiments/multibackbone_plus4_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/regnet_y_400mf/original",
+      "test_metrics_sha256": "e8b6acfcddca51dabec1c1732ac8180dc9785272e3ef56310aa68472483bb7ce",
+      "test_predictions_sha256": "c1502e39402e1480290549357276e5ea7dd05c15dfd6204738a0793399171d39"
+    },
+    {
+      "classifier": "RegNetY-400MF",
+      "input": "Remapped",
+      "run_directory": "experiments/multibackbone_plus4_original_vs_stage2train4951_t50_seed43_20261017_v1/runs/regnet_y_400mf/t50_remapped",
+      "test_metrics_sha256": "2ef7fd9089b9f2278c90319777b20d394a324ceb45da5d350ed51ad81a1c5b11",
+      "test_predictions_sha256": "dff9a3dd8ea11537464e85318309b3e2d349c82e05d315cb7503c614d488a4b7"
+    }
+  ],
+  "classification_table3_rows_verified": 12,
+  "classification_ablation_table2_rows_verified": 2,
+  "roc_macro_and_class_auc_values_verified": 48,
+  "roc_absolute_tolerance": 1e-12
+}

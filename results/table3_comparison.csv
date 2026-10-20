@@ -1,0 +1,13 @@
+Classifier,Input,ACC(%),Weighted P(%),Weighted R(%),Weighted F1(%)
+ResNet18,Original,67.57,70.52,67.57,68.17
+,Remapped,83.31,83.31,83.31,83.24
+DenseNet121,Original,74.72,75.28,74.72,74.88
+,Remapped,82.83,82.79,82.83,82.67
+MobileNetV3-Large,Original,68.68,68.82,68.68,68.74
+,Remapped,82.51,82.95,82.51,82.58
+EfficientNet-B0,Original,69.48,70.00,69.48,69.70
+,Remapped,85.37,85.25,85.37,85.25
+ShuffleNetV2 x1.0,Original,63.59,63.99,63.59,63.54
+,Remapped,84.90,84.88,84.90,84.70
+RegNetY-400MF,Original,64.55,64.46,64.55,64.50
+,Remapped,82.51,82.30,82.51,82.37
