@@ -18,8 +18,8 @@ CLASSES = ("defect", "normal", "nut")
 SPLITS = ("train", "val", "test")
 # Integer approximation to 8:1:1, with all three classes in every split.
 TARGET_COUNTS = ((98, 52, 148), (12, 7, 18), (12, 7, 19))
-DEFAULT_CLASSIFIER = Path(
-    r"D:\YOLO26_study\label_texture_experiment\striped_classification_experiment.py"
+DEFAULT_CLASSIFIER = (
+    Path(__file__).resolve().parents[1] / "reference/striped_classification_experiment.py"
 )
 
 
@@ -472,7 +472,7 @@ def report(args: argparse.Namespace, run_dir: Path, split_summary: dict) -> None
         baseline_note,
         "新数据没有对应条纹真值，本实验不计算图像与条纹真值的PSNR/SSIM，分类标签不被用于生成目标条纹。",
         "", "## 运行方法", "", "```powershell",
-        "cd D:\\Cold_Diffusion",
+        "cd <repository-root>",
         "conda run --no-capture-output -n diffusion_env python -X utf8 -u run_ttbm373_stage2_resnet18.py",
         "```", "",
         "相同命令再次运行会核验输入/输出、复用已生成图，使用分类器断点续训并跳过已封存test。参数或输入不一致时拒绝覆盖。",

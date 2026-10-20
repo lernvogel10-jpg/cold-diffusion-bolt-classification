@@ -32,121 +32,172 @@
     {
       "repository_path": "historical/compute_roc_auc_original.py",
       "source_relative_to_workspace": "output\\tables\\table3_EditaPlot_preview_20261017_v1\\roc_auc_20261017_v1\\compute_roc_auc.py",
-      "sha256": "9ceb52c6201f18ab300fe3edba0c7e9d0464e7e7162536f4a6495c9fb0675632",
-      "bytes": 16731,
-      "verbatim": true
+      "sha256": "7a4fe74c983a6252a7e2e5a4c3912175d23136acbd3ef3f2a95d54bc59fba7e5",
+      "bytes": 16740,
+      "verbatim": false,
+      "original_sha256": "9ceb52c6201f18ab300fe3edba0c7e9d0464e7e7162536f4a6495c9fb0675632",
+      "original_bytes": 16731,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/evaluate_stage1_vs_stage2_t50_similarity.py",
       "source_relative_to_workspace": "evaluate_stage1_vs_stage2_t50_similarity.py",
-      "sha256": "5e39263953071a598b54d192596339df9f0ef4c38b2400be55a2998a05a1ac01",
-      "bytes": 19163,
-      "verbatim": true
+      "sha256": "41a2086dd508fd8bf408ec81f23dca018480d1545cc62e363c6b949bd69e4f92",
+      "bytes": 19040,
+      "verbatim": false,
+      "original_sha256": "5e39263953071a598b54d192596339df9f0ef4c38b2400be55a2998a05a1ac01",
+      "original_bytes": 19163,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/evaluate_t1_all6199.py",
       "source_relative_to_workspace": "evaluate_t1_all6199.py",
-      "sha256": "6cb42886cc6e5f7694570b8613422aa7f94c1ac10b1d5e8d3270f92399f3c8b0",
-      "bytes": 14456,
-      "verbatim": true
+      "sha256": "b006d009239678c6fffac3592cd653ee4f97d1d1b3562070364d32ab686525d4",
+      "bytes": 14158,
+      "verbatim": false,
+      "original_sha256": "6cb42886cc6e5f7694570b8613422aa7f94c1ac10b1d5e8d3270f92399f3c8b0",
+      "original_bytes": 14456,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/resnet18_full6199_loss_earlystop.py",
       "source_relative_to_workspace": "resnet18_full6199_loss_earlystop.py",
-      "sha256": "eb226453e715d8f128502dfa381c9b25a718404f9c412f8e2a6154dc875c17e3",
-      "bytes": 23810,
-      "verbatim": true
+      "sha256": "27ee064f0232bf6942e1f157c2dc5a6a29cfe640096c5274ed5b9971061855de",
+      "bytes": 23809,
+      "verbatim": false,
+      "original_sha256": "eb226453e715d8f128502dfa381c9b25a718404f9c412f8e2a6154dc875c17e3",
+      "original_bytes": 23810,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_clean_baseline_vs_stage2train4951.py",
       "source_relative_to_workspace": "run_clean_baseline_vs_stage2train4951.py",
-      "sha256": "21ecda315a2f73e435cbe955fb8b88cd8224800539273991557d5df8028c19a0",
-      "bytes": 18072,
-      "verbatim": true
+      "sha256": "77dbb78b8cb1371375538ca0b8e27c9bb32757189750642268ee6feea4e0e9b0",
+      "bytes": 18071,
+      "verbatim": false,
+      "original_sha256": "21ecda315a2f73e435cbe955fb8b88cd8224800539273991557d5df8028c19a0",
+      "original_bytes": 18072,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_four_more_backbones_stage2_t50.py",
       "source_relative_to_workspace": "run_four_more_backbones_stage2_t50.py",
-      "sha256": "fff1d78c57b4732175febb0f97b041683273a0b4811a9dedb50f415e8b3393fd",
-      "bytes": 25865,
-      "verbatim": true
+      "sha256": "9dc7913915c4657a1e95112fe458ab9a7e60ef528ddd586fb4fe453c1d9a313d",
+      "bytes": 25864,
+      "verbatim": false,
+      "original_sha256": "fff1d78c57b4732175febb0f97b041683273a0b4811a9dedb50f415e8b3393fd",
+      "original_bytes": 25865,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_multibackbone_stage2_t50_comparison.py",
       "source_relative_to_workspace": "run_multibackbone_stage2_t50_comparison.py",
-      "sha256": "ac0fc92697fc8b85a5eb5e2eb7a53d45a61d38e146836c1ba9a79a59b977c737",
-      "bytes": 27208,
-      "verbatim": true
+      "sha256": "9b6fd73cf211bcfa24418391f12b58dbf5d11428e97f1b3282e4d0c0b8d2edfe",
+      "bytes": 27207,
+      "verbatim": false,
+      "original_sha256": "ac0fc92697fc8b85a5eb5e2eb7a53d45a61d38e146836c1ba9a79a59b977c737",
+      "original_bytes": 27208,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_resnet18_clean_vs_post_formula.py",
       "source_relative_to_workspace": "run_resnet18_clean_vs_post_formula.py",
-      "sha256": "3a1d57724e541b73a4f52e492dee789b7b0892bbf811336b4f638c176e650cd5",
-      "bytes": 17177,
-      "verbatim": true
+      "sha256": "ae1aa0480c33bd6754a0f0550a4a653507327c2d2c8d111165a7973ecf6918cc",
+      "bytes": 16965,
+      "verbatim": false,
+      "original_sha256": "3a1d57724e541b73a4f52e492dee789b7b0892bbf811336b4f638c176e650cd5",
+      "original_bytes": 17177,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_resnet18_full6199_external373.py",
       "source_relative_to_workspace": "run_resnet18_full6199_external373.py",
-      "sha256": "2e1d6bdfaf1c888e3fb155beb8c9f98125a05640ddeb639e46ff1935c1abd60b",
-      "bytes": 34033,
-      "verbatim": true
+      "sha256": "b5747f5312f1b8f5c95f8d5a41bc41edfb631060c42d39bd2ea10e280eaf027f",
+      "bytes": 34032,
+      "verbatim": false,
+      "original_sha256": "2e1d6bdfaf1c888e3fb155beb8c9f98125a05640ddeb639e46ff1935c1abd60b",
+      "original_bytes": 34033,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_stage1_vs_stage2_t50_resnet18_ablation.py",
       "source_relative_to_workspace": "run_stage1_vs_stage2_t50_resnet18_ablation.py",
-      "sha256": "cc1eb4d6fe85c253be2ae83a95bfc4ca5165bad51d8feca5d63e35fae3cad0ad",
-      "bytes": 16347,
-      "verbatim": true
+      "sha256": "d2219a3f96465d2a320c7280648da751228d0780ace43812b9b3f669a01e034b",
+      "bytes": 16239,
+      "verbatim": false,
+      "original_sha256": "cc1eb4d6fe85c253be2ae83a95bfc4ca5165bad51d8feca5d63e35fae3cad0ad",
+      "original_bytes": 16347,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_stage2_train4951_remapped_resnet18.py",
       "source_relative_to_workspace": "run_stage2_train4951_remapped_resnet18.py",
-      "sha256": "62707110b530fef78793b7472ca62439060ced4e4002e6595857578c23b40742",
-      "bytes": 32966,
-      "verbatim": true
+      "sha256": "73cda9e49767905fc2241c7af3b13eba1d9283f064318ecbb40e1cb9492e40a4",
+      "bytes": 32965,
+      "verbatim": false,
+      "original_sha256": "62707110b530fef78793b7472ca62439060ced4e4002e6595857578c23b40742",
+      "original_bytes": 32966,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_stage2_train4951_t50_remapped_resnet18.py",
       "source_relative_to_workspace": "run_stage2_train4951_t50_remapped_resnet18.py",
-      "sha256": "3b8d568a11b5d206ced42bad5db8abc05ae5ba78d4b854ed715f707a6e4040cc",
-      "bytes": 20684,
-      "verbatim": true
+      "sha256": "f534513448d4a0bcd69332f19c1cab4b3d0daf656b1756142ff3297beb06a1e6",
+      "bytes": 20683,
+      "verbatim": false,
+      "original_sha256": "3b8d568a11b5d206ced42bad5db8abc05ae5ba78d4b854ed715f707a6e4040cc",
+      "original_bytes": 20684,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/run_ttbm373_stage2_resnet18.py",
       "source_relative_to_workspace": "run_ttbm373_stage2_resnet18.py",
-      "sha256": "af21ba3aa293eb5266832eb929113e52c7df9b14761b93d8cb1ee1931e153859",
-      "bytes": 30080,
-      "verbatim": true
+      "sha256": "cbbcc8e9bd00652a5427afc908d778337b11f0be4649700556dc1e2ebbdbede2",
+      "bytes": 30081,
+      "verbatim": false,
+      "original_sha256": "af21ba3aa293eb5266832eb929113e52c7df9b14761b93d8cb1ee1931e153859",
+      "original_bytes": 30080,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "historical/train_stage2_train4951.py",
       "source_relative_to_workspace": "train_stage2_train4951.py",
-      "sha256": "d86e31934bd724699ddc942fc8fd01f8bf82f3706668d14d4a0042749e02f25f",
-      "bytes": 14231,
-      "verbatim": true
+      "sha256": "b4e84aa7def5b80f83d65ebde05eecac0443a9f359304cf4fca287c1f84f6011",
+      "bytes": 14230,
+      "verbatim": false,
+      "original_sha256": "d86e31934bd724699ddc942fc8fd01f8bf82f3706668d14d4a0042749e02f25f",
+      "original_bytes": 14231,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "reference/generate_striped_dataset.py",
       "source_relative_to_workspace": "YOLO26_study/label_texture_experiment/generate_striped_dataset.py",
-      "sha256": "6f22a8e9ce6c174ea9ec89f41e5b99addfd3deffbcfe77ab862c7b4f11e3257b",
-      "bytes": 16216,
-      "verbatim": true
+      "sha256": "9c89b134879355b94cdee23ccef4f277ca888989d61564784cc679cd4e076fd7",
+      "bytes": 16146,
+      "verbatim": false,
+      "original_sha256": "6f22a8e9ce6c174ea9ec89f41e5b99addfd3deffbcfe77ab862c7b4f11e3257b",
+      "original_bytes": 16216,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "reference/regroup_crops64_dataset.py",
       "source_relative_to_workspace": "YOLO26_study/label_texture_experiment/regroup_crops64_dataset.py",
-      "sha256": "be05b41d84a9bde58132bb8eddd43f5970828cfb9786b94020e0404969165853",
-      "bytes": 18359,
-      "verbatim": true
+      "sha256": "13f5ab1f764a4857c58046e803b10b11cbb914a005f8622ab60df30888744567",
+      "bytes": 18278,
+      "verbatim": false,
+      "original_sha256": "be05b41d84a9bde58132bb8eddd43f5970828cfb9786b94020e0404969165853",
+      "original_bytes": 18359,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "reference/striped_classification_experiment.py",
       "source_relative_to_workspace": "YOLO26_study/label_texture_experiment/striped_classification_experiment.py",
-      "sha256": "0af6c673dd8e5c25e49698a8ca32bb466f6e75db4671fe90cb8cf142ad19495d",
-      "bytes": 34588,
-      "verbatim": true
+      "sha256": "5dc197f25f648fbd1a37ce1012f4b127b00930c6bf25d3d1f64a726126b99ae6",
+      "bytes": 34488,
+      "verbatim": false,
+      "original_sha256": "0af6c673dd8e5c25e49698a8ca32bb466f6e75db4671fe90cb8cf142ad19495d",
+      "original_bytes": 34588,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "results/ablation_full_metrics.csv",
@@ -165,19 +216,26 @@
     {
       "repository_path": "train_stage1_ddpm.py",
       "source_relative_to_workspace": "train_stage1_ddpm.py",
-      "sha256": "7942b3392dfe782ce13cdcea340fe194b1a3ff88b27e6c98c75698fae826f1ec",
-      "bytes": 7725,
-      "verbatim": true
+      "sha256": "15b2fc43a546c71fb6f9e0fcfd66698696c07091cf1c2d68de1a3545bd444621",
+      "bytes": 7619,
+      "verbatim": false,
+      "original_sha256": "7942b3392dfe782ce13cdcea340fe194b1a3ff88b27e6c98c75698fae826f1ec",
+      "original_bytes": 7725,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     },
     {
       "repository_path": "train_stage2_finetune.py",
       "source_relative_to_workspace": "train_stage2_finetune.py",
-      "sha256": "5e440742c9fd270068d00b63f34fbbe01faa1b6bb7eb74afa8ecd48e033729d7",
-      "bytes": 9359,
-      "verbatim": true
+      "sha256": "cff09319df10a31e264183835f259c605a637ebbcb00691732eab641c2597e15",
+      "bytes": 9187,
+      "verbatim": false,
+      "original_sha256": "5e440742c9fd270068d00b63f34fbbe01faa1b6bb7eb74afa8ecd48e033729d7",
+      "original_bytes": 9359,
+      "release_edit": "Machine-specific path defaults and generated command examples replaced by generic paths; learning and evaluation algorithms unchanged."
     }
   ],
   "manuscript_sha256": "fb2e6f0f7eb7193f614734dc237f59dcf26ff4481a708540350ab048b3a1e4a7",
   "experiment_summary_sha256": "0e146bfe6c4530e4046c16932b0d868ecb604063d0877c776f73bf6dcbd346ae",
-  "original_sources_modified": false
+  "original_sources_modified": false,
+  "dataset_availability": "Currently not publicly available; no images or image-level manifests are distributed."
 }

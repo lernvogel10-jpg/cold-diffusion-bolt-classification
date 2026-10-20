@@ -306,7 +306,7 @@ def report(args, manifest: dict, protocol: dict, classifier) -> None:
               f"- 再映射权重：[remapped/final.pt]({(root / 'remapped/final.pt').as_posix()})",
               f"- 总指标：[external_comparison.csv]({(root / 'external_comparison.csv').as_posix()})",
               "- 两组history.csv记录每轮训练损失、ACC、实际/下一轮学习率、最佳轮数和早停计数；last.pt是恢复断点，best_train_loss.pt/final.pt是最低损失权重。",
-              "", "```powershell", "cd D:\\Cold_Diffusion",
+              "", "```powershell", "cd <repository-root>",
               "conda run --no-capture-output -n diffusion_env python -X utf8 -u run_resnet18_full6199_external373.py",
               "```", "", "默认训练损失早停，--epochs 100 --patience 15 --min-delta 0.0001；默认workers4加速数据读取。相同命令自动续训或复用已完成结果，仅重建报告加--stage report。断点保留模型、优化器、学习率调度、早停计数及主进程随机状态；多进程增广的工作进程随机状态不保存，跨中断续训不保证逐位复现，需严格连续随机流时使用--workers 0并另选目录。--stopping fixed用于复现旧固定19/23轮协议，写入旧目录。"]
     (root / "EXTERNAL_TEST_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

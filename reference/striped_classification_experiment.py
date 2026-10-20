@@ -22,13 +22,9 @@ from torch.utils.data import DataLoader
 from torchvision import datasets, models, transforms
 
 
-DEFAULT_CLEAN_DATA = Path(r"D:\南网项目\yolo26_crops64_dataset")
-DEFAULT_STRIPED_DATA = Path(
-    r"D:\YOLO26_study\datasets\yolo26_crops64_striped_bmask"
-)
-DEFAULT_RUNS = Path(
-    r"D:\YOLO26_study\experiments\label_texture_classification"
-)
+DEFAULT_CLEAN_DATA = Path("data/original")
+DEFAULT_STRIPED_DATA = Path("data/watermarked")
+DEFAULT_RUNS = Path("runs/label_texture_classification")
 CLASSES = ("defect", "normal", "nut")
 IMAGE_SIZE = 64
 

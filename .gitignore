@@ -8,6 +8,21 @@ venv/
 .idea/
 data/*
 !data/README.md
+# The study data are not public: do not accidentally commit images or archives.
+*.png
+*.jpg
+*.jpeg
+*.bmp
+*.tif
+*.tiff
+*.webp
+*.zip
+*.7z
+*.rar
+*.tar
+*.gz
+crops_manifest.csv
+test_predictions.csv
 experiments/
 runs/
 outputs/

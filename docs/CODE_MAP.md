@@ -18,7 +18,7 @@
 | ROC / AUC analysis | `historical/compute_roc_auc_original.py`; extracted functions in `reference/roc_math.py` |
 | Portable new-run commands | `paper_cli.py` and `compute_roc_auc.py` |
 
-All original files listed in `SOURCE_MANIFEST.json` are copied byte-for-byte. Original local source files and experiment directories are not edited. Other historical modules are retained because the primary scripts import them; their presence does not mean their older external-data protocols are the reported paper protocol.
+`SOURCE_MANIFEST.json` distinguishes byte-for-byte originals from release copies whose machine-specific paths were sanitized. For sanitized copies it records both the original and released file hashes; learning and evaluation algorithms are unchanged. Original local source files and experiment directories are not edited. Other historical modules are retained because the primary scripts import them; their presence does not mean their older external-data protocols are the reported paper protocol.
 
 The historical ROC script also validates an old Word draft and editing snapshots. Those private working documents are intentionally absent. The portable ROC entry point reads probability CSVs directly and reuses its numerical functions without those document dependencies.
 

@@ -20,11 +20,28 @@ from reference.roc_math import roc_binary, macro_curve, area
 
 
 class ReleaseTests(unittest.TestCase):
-    def test_verbatim_source_hashes(self):
+    def test_release_source_hashes(self):
         record=json.loads((ROOT/'SOURCE_MANIFEST.json').read_text())
         for source in record['original_files']:
             with self.subTest(path=source['repository_path']):
                 self.assertEqual(sha256((ROOT/source['repository_path']).read_bytes()).hexdigest(),source['sha256'])
+
+    def test_published_paths_and_data_boundary(self):
+        import re
+        paths=[path for path in ROOT.iterdir() if path.is_file()]
+        for directory in ('assets','configs','data','diffusion_stripe','docs','historical','reference','results','tests'):
+            paths.extend(path for path in (ROOT/directory).rglob('*') if path.is_file() and '__pycache__' not in path.parts)
+        for path in paths:
+            with self.subTest(path=str(path.relative_to(ROOT))):
+                self.assertNotIn(path.suffix.lower(),{'.png','.jpg','.jpeg','.bmp','.tif','.tiff','.webp'})
+                if path.suffix.lower() in {'.py','.json','.md','.csv','.txt'}:
+                    text=path.read_text(encoding='utf-8')
+                    self.assertIsNone(re.search(r'(?<![A-Za-z])[A-Za-z]:[\\/]',text))
+        self.assertEqual([p.name for p in (ROOT/'data').iterdir()],['README.md'])
+        self.assertIn('currently not publicly available',(ROOT/'README.md').read_text())
+        ignored=(ROOT/'.gitignore').read_text().splitlines()
+        for pattern in ('data/*','*.png','*.jpg','crops_manifest.csv','test_predictions.csv'):
+            self.assertIn(pattern,ignored)
 
     def test_archived_noise(self):
         path=ROOT/'assets/noise_t50_seed43.pt'

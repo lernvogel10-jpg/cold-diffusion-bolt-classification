@@ -306,7 +306,7 @@ def report(args, protocol, classifier):
         f'- 差值：[remapped_minus_original_deltas_pp.csv]({(args.output_dir / "remapped_minus_original_deltas_pp.csv").as_posix()})',
         '- 新训练的每组runs/<模型>/<original或t50_remapped>/均含best.pt、last.pt、config.json、history.csv、val/test预测和混淆矩阵。', '',
         '模型构造接口参考：[TorchVision官方模型文档](https://docs.pytorch.org/vision/stable/models.html)。', '',
-        '```powershell', 'cd D:\\Cold_Diffusion', f'conda run --no-capture-output -n diffusion_env python -X utf8 -u {Path(__file__).name}', '```', '',
+        '```powershell', 'cd <repository-root>', f'conda run --no-capture-output -n diffusion_env python -X utf8 -u {Path(__file__).name}', '```', '',
         '--stage preflight仅核验，train训练指定模型两组并评估val，test仅冻结评估，report只读既有预测汇总；默认all完整运行。--models可选本次训练模型子集。非空未知目录拒绝覆盖；相同命令核验后复用完成组或按last.pt继续，多进程增广续训不保证逐位复现。旧权重/结果、总实验MD和论文均不改动。']
     (args.output_dir / REPORT_NAME).write_text('\n'.join(lines) + '\n', encoding='utf-8')
     for row in rows:

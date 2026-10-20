@@ -6,6 +6,12 @@ The method learns a time-conditioned U-Net from directional watermark targets, f
 
 This repository contains the actual experiment source files, their local dependencies, a portable path adapter, the numerical results used in the manuscript, and source SHA-256 hashes. It does not include the manuscript, inspection images, generator/classifier checkpoints, Word/Visio/Origin files, or unrelated experiments. The archived fixed inference noise tensor is included because its exact values affect the experiment.
 
+## Data availability
+
+The dataset used in this study is currently not publicly available and is not distributed with this repository. This restriction also covers the watermarked images, remapped images, and image-level source/split manifests. No download link or promise of access is provided. The directory layouts and commands below describe the expected interface for users who already have authorization to use compatible data; publishing the code does not grant access to or redistribution rights for the study data.
+
+Published source files use generic paths instead of the original machine-specific paths. These release-only path changes do not alter the learning or evaluation algorithms; they are recorded in `SOURCE_MANIFEST.json`.
+
 ## Experimental scope
 
 | Stage | Data | Objective or protocol |
@@ -34,7 +40,7 @@ python -m venv .venv
 python -m pip install -r requirements.txt
 ```
 
-The original experiment ran on Windows. The path adapter avoids the historical `D:` drive paths; execution on other operating systems has not been verified. See [environment details](docs/ENVIRONMENT.json).
+The original experiment ran on Windows. The published defaults and path adapter use generic paths; execution on other operating systems has not been verified. See [environment details](docs/ENVIRONMENT.json).
 
 ## Data preparation
 
@@ -122,7 +128,7 @@ This reads frozen `test_predictions.csv` files with `true_id`, `true_class`, and
 - [Class-specific and macro AUC](results/auc_summary.csv)
 - [Full ablation metrics](results/ablation_full_metrics.csv)
 - [Paper section to program mapping](docs/CODE_MAP.md)
-- [Verbatim source file hashes](SOURCE_MANIFEST.json)
+- [Source provenance and released file hashes](SOURCE_MANIFEST.json)
 - [Release checks](docs/VALIDATION.json)
 
-The tables were extracted from the supplied English manuscript and checked against the frozen experiment results. Packaging does not retrain any model or replace the reported metrics. The historical files retain machine-specific paths and references to sealed experiment artifacts; they document the original runs and should not be treated as standalone fresh-run commands. Use the explicit-path commands above for a new run.
+The tables were extracted from the supplied English manuscript and checked against the frozen experiment results. Packaging does not retrain any model or replace the reported metrics. Historical files retain references to sealed experiment artifacts, but their machine-specific paths have been replaced with generic paths. They document the original runs and should not be treated as standalone fresh-run commands. Use the explicit-path commands above for a new run. Source hashes distinguish unchanged originals from path-sanitized release copies.

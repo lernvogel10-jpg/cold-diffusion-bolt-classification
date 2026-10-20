@@ -18,21 +18,11 @@ from diffusion_stripe.model import build_model_from_checkpoint
 from diffusion_stripe.training import linear_beta_schedule, resolve_device
 
 
-DEFAULT_ORIGINAL_ROOT = Path(
-    r"D:\YOLO26_study\datasets\yolo26_crops64_dataset_source_grouped_split43"
-)
-DEFAULT_STRIPED_ROOT = Path(
-    r"D:\YOLO26_study\datasets\yolo26_crops64_striped_source_grouped_split43_w1_low0p9"
-)
-DEFAULT_CHECKPOINT = Path(
-    r"D:\Cold_Diffusion\experiments\full6199_two_stage\stage2\final_generator.pt"
-)
-DEFAULT_NOISE_FILE = Path(
-    r"D:\Cold_Diffusion\experiments\full6199_two_stage\inference_compare_t1_seed43\noise_t1_seed43.pt"
-)
-DEFAULT_OUTPUT_DIR = Path(
-    r"D:\Cold_Diffusion\experiments\full6199_two_stage\inference_compare_t1_all6199"
-)
+DEFAULT_ORIGINAL_ROOT = Path("data/original")
+DEFAULT_STRIPED_ROOT = Path("data/watermarked")
+DEFAULT_CHECKPOINT = Path("runs/aligned/stage2/final_generator.pt")
+DEFAULT_NOISE_FILE = Path("runs/generator/inference_t1/noise_t1_seed43.pt")
+DEFAULT_OUTPUT_DIR = Path("outputs/inference_t1")
 
 METHOD_NAMES = (
     "original_baseline",

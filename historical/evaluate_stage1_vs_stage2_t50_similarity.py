@@ -31,8 +31,8 @@ from train_stage2_train4951 import EXPECTED_COUNTS, inspect_pair, sha256
 
 ROOT = Path(__file__).resolve().parent
 DEFAULT_OUTPUT = ROOT / "experiments/stage1_vs_stage2_train4951_t50_similarity_20261016_v1"
-ORIGINALS = Path(r"D:\YOLO26_study\datasets\yolo26_crops64_dataset_source_grouped_split43")
-TARGETS = Path(r"D:\YOLO26_study\datasets\yolo26_crops64_striped_source_grouped_split43_w1_low0p9")
+ORIGINALS = Path("data/original")
+TARGETS = Path("data/watermarked")
 STAGE1 = ROOT / "experiments/full6199_two_stage/stage1/best_train_loss.pt"
 STAGE2 = ROOT / "experiments/stage2_train4951_from_existing_stage1_seed43/stage2/final_generator.pt"
 NOISE = ROOT / "experiments/full6199_two_stage/inference_compare_t50_seed43/noise_t50_seed43.pt"

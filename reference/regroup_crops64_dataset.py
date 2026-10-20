@@ -15,10 +15,8 @@ from pathlib import Path
 
 CLASSES = ("defect", "normal", "nut")
 SPLITS = ("train", "val", "test")
-DEFAULT_SOURCE = Path(r"D:\南网项目\yolo26_crops64_dataset")
-DEFAULT_OUTPUT = Path(
-    r"D:\YOLO26_study\datasets\yolo26_crops64_dataset_source_grouped_v2"
-)
+DEFAULT_SOURCE = Path("data/source_crops")
+DEFAULT_OUTPUT = Path("data/original")
 EXPECTED_TOTAL = 6199
 
 

@@ -445,7 +445,7 @@ def report(args, manifest: dict, protocol: dict, classifier) -> None:
         f"- 原图分类器：[original/final.pt]({(root / 'original/final.pt').as_posix()})",
         f"- 再映射分类器：[remapped/final.pt]({(root / 'remapped/final.pt').as_posix()})",
         f"- 指标：[external_comparison.csv]({(root / 'external_comparison.csv').as_posix()})",
-        "", "```powershell", "cd D:\\Cold_Diffusion",
+        "", "```powershell", "cd <repository-root>",
         "conda run --no-capture-output -n diffusion_env python -X utf8 -u run_resnet18_full6199_external373.py",
         "```", "", "重复相同命令会核验输入、复用完成的冻结权重并跳过已封存外部推理；仅重建报告加`--stage report`。断点保存模型、优化器和随机状态，默认workers0以便恢复增强随机流。",
     ]

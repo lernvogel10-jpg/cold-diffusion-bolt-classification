@@ -9,20 +9,12 @@ from datetime import datetime
 from pathlib import Path
 
 
-DEFAULT_CLEAN_DATA = Path(
-    r"D:\YOLO26_study\datasets\yolo26_crops64_dataset_source_grouped_split43"
+DEFAULT_CLEAN_DATA = Path("data/original")
+DEFAULT_REMAPPED_DATA = Path("data/remapped")
+DEFAULT_CLASSIFIER_SCRIPT = (
+    Path(__file__).resolve().parents[1] / "reference/striped_classification_experiment.py"
 )
-DEFAULT_REMAPPED_DATA = Path(
-    r"D:\Cold_Diffusion\experiments\full6199_two_stage"
-    r"\inference_compare_t1_all6199\images\post_formula_prediction"
-)
-DEFAULT_CLASSIFIER_SCRIPT = Path(
-    r"D:\YOLO26_study\label_texture_experiment"
-    r"\striped_classification_experiment.py"
-)
-DEFAULT_EXPERIMENT_DIR = Path(
-    r"D:\Cold_Diffusion\experiments\resnet18_clean_vs_post_formula_t1_seed43"
-)
+DEFAULT_EXPERIMENT_DIR = Path("runs/resnet18_clean_vs_post_formula_t1_seed43")
 CLASSES = ("defect", "normal", "nut")
 SPLITS = ("train", "val", "test")
 IMAGE_EXTENSIONS = {".png", ".jpg", ".jpeg", ".bmp", ".tif", ".tiff"}

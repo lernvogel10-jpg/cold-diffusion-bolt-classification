@@ -199,7 +199,7 @@ def comparison(args, protocol: dict, classifier) -> None:
               f"- 新再映射权重：[best.pt]({(REMAPPED_RUN/'best.pt').as_posix()})",
               f"- 合并指标：[original_vs_remapped_metrics.csv]({(args.output_dir/'original_vs_remapped_metrics.csv').as_posix()})",
               "- 各组逐图预测、混淆矩阵与训练曲线保留在各自run目录；合并指标由逐图预测重新计算并核验。", "",
-              "```powershell", "cd D:\\Cold_Diffusion",
+              "```powershell", "cd <repository-root>",
               "conda run --no-capture-output -n diffusion_env python -X utf8 -u run_clean_baseline_vs_stage2train4951.py",
               "```", "", "相同命令核验并复用完成结果或断点续训；--stage report仅合并已有结果。多进程增广工作进程RNG不保存，跨中断续训不保证逐位复现。"]
     (args.output_dir / "ORIGINAL_VS_NEW_STAGE2_REMAPPED_REPORT.md").write_text("\n".join(lines)+"\n", encoding="utf-8")

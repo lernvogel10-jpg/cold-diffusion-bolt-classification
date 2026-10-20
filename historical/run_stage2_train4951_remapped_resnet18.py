@@ -429,7 +429,7 @@ def report(args, protocol: dict, classifier) -> None:
               f"- 最佳分类器：[best.pt]({(args.run_dir/'best.pt').as_posix()})",
               f"- 总指标：[classification_{args.selection}_metrics.csv]({(args.output_dir/f'classification_{args.selection}_metrics.csv').as_posix()})",
               "- 同目录包含逐图预测、混淆矩阵、训练曲线和history.csv；生成图片及冻结分类器、结果均记录SHA256，报告指标由逐图预测重新核算。", "",
-              "```powershell", "cd D:\\Cold_Diffusion",
+              "```powershell", "cd <repository-root>",
               f"conda run --no-capture-output -n diffusion_env python -X utf8 -u run_stage2_train4951_remapped_resnet18.py --selection {args.selection}",
               "```", "", "相同命令会核验已有数据、断点续训或复用完成结果。--stage report只重建报告；--stage prepare只生成图片。默认workers4，工作进程增广RNG不保存，跨中断续训不保证逐位复现；需要严格主进程随机流时使用--workers 0并另选目录。"]
     (args.output_dir / f"RESNET18_{args.selection.upper()}_REPORT.md").write_text("\n".join(lines)+"\n", encoding="utf-8")

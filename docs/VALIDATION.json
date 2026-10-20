@@ -9,11 +9,18 @@
   "dataset_count_check": 6199,
   "fast_unit_tests": {
     "suite": "python -m unittest discover -s tests -v",
-    "count": 8,
+    "count": 9,
     "result": "passed"
   },
   "full_training_rerun": false,
   "all6199_generator_inference_rerun": false,
   "training_data_and_checkpoints_uploaded": false,
-  "source_integrity": "Verbatim source hashes checked by unit tests."
+  "source_integrity": "Published source hashes checked by unit tests; path-sanitized copies retain original source hashes in SOURCE_MANIFEST.json.",
+  "privacy_update": {
+    "date": "2026-10-20",
+    "source_files_path_sanitized": 19,
+    "dataset_availability": "Currently not publicly available",
+    "working_tree_drive_paths": 0,
+    "git_history_rewritten": false
+  }
 }

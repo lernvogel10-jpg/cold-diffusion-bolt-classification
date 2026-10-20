@@ -280,7 +280,7 @@ def report(args, protocol, classifier):
     for architecture, arms in runs.items():
         lines.append(f"| {NAMES[architecture]} | [原图组]({arms['original'].as_posix()}) | [再映射组]({arms['t50_remapped'].as_posix()}) |")
     lines += ['', '每组目录含best.pt、last.pt、config.json、history.csv、val/test指标及逐图预测、混淆矩阵和训练曲线。', '',
-              '```powershell', 'cd D:\\Cold_Diffusion',
+              '```powershell', 'cd <repository-root>',
               'conda run --no-capture-output -n diffusion_env python -X utf8 -u run_four_more_backbones_stage2_t50.py', '```', '',
               '`--stage preflight`只核验；`train`只训练并评价val；`test`要求8组全部冻结后评价；`report`只汇总已封存结果；默认all完整运行。--models可指定4个新增模型中的子集用于分段训练，但测试屏障仍要求8组全部完成。复用完成组或按last.pt续训；多进程增广跨中断续训不保证逐位复现。', '',
               '模型参考：[ResNet34](https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.resnet34.html)、[ShuffleNetV2](https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.shufflenet_v2_x1_0.html)、[SqueezeNet1.1](https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.squeezenet1_1.html)、[RegNetY-400MF](https://docs.pytorch.org/vision/0.21/models/generated/torchvision.models.regnet_y_400mf.html)。', '',

@@ -24,13 +24,9 @@ from diffusion_stripe.training import (
 )
 
 
-DEFAULT_ORIGINAL_ROOT = Path(
-    r"D:\YOLO26_study\datasets\yolo26_crops64_dataset_source_grouped_split43"
-)
-DEFAULT_STRIPED_ROOT = Path(
-    r"D:\YOLO26_study\datasets\yolo26_crops64_striped_source_grouped_split43_w1_low0p9"
-)
-DEFAULT_OUTPUT_ROOT = Path(r"D:\Cold_Diffusion\experiments\full6199_two_stage")
+DEFAULT_ORIGINAL_ROOT = Path("data/original")
+DEFAULT_STRIPED_ROOT = Path("data/watermarked")
+DEFAULT_OUTPUT_ROOT = Path("runs/aligned")
 
 
 def parse_args(argv: list[str] | None = None) -> argparse.Namespace:

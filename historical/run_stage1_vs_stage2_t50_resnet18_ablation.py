@@ -73,7 +73,7 @@ def preflight(args, classifier):
     source_hashes = source["weights_and_noise_sha256"]
     assert sha256(STAGE1_CHECKPOINT) == source_hashes[str(STAGE1_CHECKPOINT)]
     assert source["count"] == 6199 and source["recursion_steps"] == 50
-    split_path = Path(r"D:\YOLO26_study\datasets\yolo26_crops64_dataset_source_grouped_split43\reports\crops_manifest.csv")
+    split_path = Path("data/original/reports/crops_manifest.csv")
     with split_path.open(encoding="utf-8-sig", newline="") as handle:
         split_manifest = list(csv.DictReader(handle))
     groups = {s: {r["canonical_source_group"] for r in split_manifest if r["split"] == s} for s in pipeline.SPLITS}
@@ -118,13 +118,13 @@ def install_cooling(classifier):
     original_train = classifier.train_epoch
     def paced_train(*args, **kwargs):
         # This runs outside the epoch's random/data/gradient operations.
-        reply = subprocess.run([r"C:\Windows\System32\nvidia-smi.exe", "--query-gpu=temperature.gpu",
+        reply = subprocess.run(["nvidia-smi", "--query-gpu=temperature.gpu",
                                 "--format=csv,noheader,nounits"], capture_output=True, text=True, check=True)
         temperature = int(reply.stdout.strip().splitlines()[0])
         while temperature >= 83:
             print(f"THERMAL_IDLE {temperature}C, resting 5s", flush=True)
             time.sleep(5)
-            reply = subprocess.run([r"C:\Windows\System32\nvidia-smi.exe", "--query-gpu=temperature.gpu",
+            reply = subprocess.run(["nvidia-smi", "--query-gpu=temperature.gpu",
                                     "--format=csv,noheader,nounits"], capture_output=True, text=True, check=True)
             temperature = int(reply.stdout.strip().splitlines()[0])
         result = original_train(*args, **kwargs)

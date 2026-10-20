@@ -175,7 +175,7 @@ def finish(output_root: Path, protocol: dict) -> None:
              "本次只训练新Stage2，没有改动已有再映射图或ResNet18结果，也没有自动用新生成器替换原实验的权重路径。新旧训练损失基于不同样本集合，不能单凭它们判断泛化是否改善。", "",
              "## 数据隔离的边界", "",
              "旧划分的train/val/test同源组无交集；本次Stage2只使用train。但复用的旧Stage1曾用全6199条纹图训练，因此验证和测试样本并非对整个生成器训练流程完全未见。这个实验只比较Stage2微调数据范围变化；不能据此声称全流程独立留出。如要全流程隔离，还需另行只用train4951训练Stage1（不属于本次改动）。", "",
-             "## 终端运行", "", "```powershell", "cd D:\\Cold_Diffusion",
+             "## 终端运行", "", "```powershell", "cd <repository-root>",
              "conda run --no-capture-output -n diffusion_env python -X utf8 -u train_stage2_train4951.py",
              "```", "", "仅核验加--preflight-only；中断续训加--resume；非空目录默认拒绝覆盖。"]
     (output_root / "STAGE2_TRAIN4951_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")

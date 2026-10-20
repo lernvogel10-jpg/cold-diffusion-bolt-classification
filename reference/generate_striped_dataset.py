@@ -12,10 +12,8 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 
-DEFAULT_SOURCE = Path(r"D:\南网项目\yolo26_crops64_dataset")
-DEFAULT_OUTPUT = Path(
-    r"D:\YOLO26_study\datasets\yolo26_crops64_striped_bmask"
-)
+DEFAULT_SOURCE = Path("data/original")
+DEFAULT_OUTPUT = Path("data/watermarked")
 CLASSES = ("defect", "normal", "nut")
 SPLITS = ("train", "val", "test")
 PATTERN_BY_CLASS = {

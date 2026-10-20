@@ -9,7 +9,7 @@ import sys
 import xml.etree.ElementTree as ET
 import numpy as np
 
-ROOT = Path(r'D:\Cold_Diffusion')
+ROOT = Path(__file__).resolve().parents[1]
 OUT = Path(__file__).resolve().parent
 SNAPSHOT = OUT.parent / 'source_audit.json'
 SOURCE_MD = ROOT / 'COLD_DIFFUSION_RESNET18_EXPERIMENT_SUMMARY.md'

@@ -248,7 +248,7 @@ def report(args, protocol: dict, classifier) -> None:
               f"- 指标：[classification_val_loss_metrics.csv]({(args.output_dir/'classification_val_loss_metrics.csv').as_posix()})",
               f"- 原图/t1/t50对照：[original_t1_t50_comparison.csv]({(args.output_dir/'original_t1_t50_comparison.csv').as_posix()})",
               "- run目录保留val/test逐图预测、混淆矩阵、训练曲线和训练历史；指标从逐图预测重新核算。", "",
-              "```powershell", "cd D:\\Cold_Diffusion",
+              "```powershell", "cd <repository-root>",
               "conda run --no-capture-output -n diffusion_env python -X utf8 -u run_stage2_train4951_t50_remapped_resnet18.py",
               "```", "", "--stage preflight仅检查；--stage prepare仅生成图片；--stage report仅汇总。相同命令核验后复用完成结果，支持按完整生成批次及分类器last.pt断点继续；多进程增广RNG不保存，分类器续训不保证逐位复现。"]
     (args.output_dir / "RESNET18_T50_VAL_LOSS_REPORT.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
